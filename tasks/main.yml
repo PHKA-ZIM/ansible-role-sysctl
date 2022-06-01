@@ -1,0 +1,8 @@
+---
+- name: Add sysctl configuration
+  ansible.builtin.include_tasks: install.yml
+  when: sysctl_uninstall == false
+
+- name: Remove sysctl configuration
+  ansible.builtin.include_tasks: uninstall.yml
+  when: sysctl_uninstall == true

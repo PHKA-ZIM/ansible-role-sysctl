@@ -1,0 +1,3 @@
+---
+sysctl_sysctld_path: /etc/sysctl.d/
+sysctl_file_mode: 0644
