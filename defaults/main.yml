@@ -1,3 +1,4 @@
 ---
 sysctl_local_sysctld_path: ./sysctl.d/
+
 sysctl_uninstall: false

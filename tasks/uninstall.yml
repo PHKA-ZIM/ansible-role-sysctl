@@ -1,8 +1,0 @@
----
-- name: Remove sysctl.d files
-  become: true
-  ansible.builtin.file:
-    path: "{{ sysctl_sysctld_path }}/{{ item | basename }}"
-    state: absent
-  with_fileglob:
-    - "{{ sysctl_local_sysctld_path }}/*.conf"
